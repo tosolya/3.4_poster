@@ -5,16 +5,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
-
+@AllArgsConstructor
 @Data
 public class PosterMovies {
     private int id;
     private String movieName;
     private String genre;
 
-    public PosterMovies(int id, String movieName, String genre) {
-        this.id = id;
-        this.movieName = movieName;
-        this.genre = genre;
-    }
 }

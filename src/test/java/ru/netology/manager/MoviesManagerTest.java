@@ -14,16 +14,14 @@ class MoviesManagerTest {
      PosterMovies third = new PosterMovies(3, "Душа", "Мультфильм");
      PosterMovies fourth = new PosterMovies(4,  "Фантаны", "Фантастика");
      PosterMovies fifth = new PosterMovies(5,  "Рокки", "Боевик");
-     PosterMovies sixth = new PosterMovies(6,  "Охотник за головами", "Комедия");
 
-    @BeforeEach
     public void setUp() {
         manager.add(first);
         manager.add(second);
         manager.add(third);
         manager.add(fourth);
         manager.add(fifth);
-        manager.add(sixth);
+
     }
 
     @Test
