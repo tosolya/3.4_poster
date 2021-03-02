@@ -7,6 +7,10 @@ public class MoviesManager {
     public PosterMovies[] movies = new PosterMovies[0];
     private int feedCount = 10;
 
+    public MoviesManager(int feedCount) {
+        this.feedCount = feedCount;
+    }
+
     public MoviesManager() {
 
     }
@@ -46,7 +50,4 @@ public class MoviesManager {
         return result;
     }
 
-    public MoviesManager(int feedCount) {
-        this.feedCount = feedCount;
-    }
 }
